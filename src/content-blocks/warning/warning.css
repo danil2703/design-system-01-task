@@ -1,0 +1,12 @@
+.warning {
+    min-height: 335px;
+}
+
+.warning .placeholder {
+    margin-top: var(--space-m);
+    margin-bottom: var(--space-m);
+}
+
+.warning__button-wrapper {
+    margin-top: 5px;
+}

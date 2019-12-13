@@ -1,0 +1,11 @@
+.payment {
+    border: 3px solid var(--border);
+}
+
+.payment__footer .form__control  {
+    width: auto;
+}
+
+.payment__content {
+    padding-bottom: 18px;
+}

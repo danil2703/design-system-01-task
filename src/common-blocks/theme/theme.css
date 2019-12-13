@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.theme_color_project-default {
+    --default: #FFFFFF;
+    --accent: #ffcc00;
+    --border: #000000;
+    --primary: #000000;
+    --secondary: rgba(0, 0, 0, 0.6);
+    --ghost: rgba(0, 0, 0, 0.3);
+    --link: #0077ff;
+}
+
+
+.theme_color_project-brand {
+    --default: #0077ff;;
+    --accent: #FFFFFF;
+    --border: #FFFFFF;
+    --primary: #FFFFFF;
+    --secondary: rgba(255, 255, 255, 0.6);
+    --ghost: rgba(255, 255, 255, 0.3);
+    --link: #FFFFFF;
+}
+
+.theme_color_project-inverse {
+    --default: #000000;
+    --accent: #FFFFFF;
+    --border: #FFFFFF;
+    --primary: #FFFFFF;
+    --secondary: rgba(255, 255, 255, 0.6);
+    --ghost: rgba(255, 255, 255, 0.3);
+    --link: #0077ff;
+}
+
+.theme_color_project-warning {
+    --default: #ff3333;
+    --accent: #FFFFFF;
+    --border: #ff3333;
+    --primary: #FFFFFF;
+    --secondary: rgba(255, 255, 255, 0.6);
+    --ghost: rgba(255, 255, 255, 0.3);
+    --link: #FFF;
+}
+
+.theme_size_default {
+    --size-s: 8px;
+    --size-m: 10px;
+    --size-l: 11px;
+    --size-xl: 13px;
+    --size-xxl: 16px;
+
+    --line-interval-s: 21px;
+    --line-interval-m: 25px;
+    --line-interval-l: 28px;
+    --line-interval-xl: 34px;
+    --line-interval-xxl: 38px;
+}
+
+.theme_space_default {
+    --space-xxxs: 3px;
+    --space-xxs: 6px;
+    --space-xs: 9px;
+    --space-s: 15px;
+    --space-m: 18px;
+    --space-l: 24px;
+    --space-xl: 27px;
+    --space-xxl: 36px;
+    --space-xxxl: 45px;
+    --space-xxxxl: 51px;
+    --space-xxxxxl: 72px.
+}
+
+.theme_gap_small {
+    --gap: var(--space-xl);
+}
+
+
+.theme {
+    background-color: var(--default);
+}
+
+
+@media screen and (max-width: 1024px) {
+    .layout .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .grid .grid__fraction {
+        grid-column: span 1;
+    }
+}

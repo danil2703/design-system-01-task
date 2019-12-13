@@ -1,0 +1,18 @@
+.cover {
+    min-height: 472px;
+    padding: var(--space-xxl);
+    position:relative;
+}
+
+.cover__preview .image {
+    height: 180px;
+}
+
+.cover__preview {
+    margin-bottom: var(--space-l);
+}
+
+.cover__footer {
+    width: 100%;
+    left: 0;
+}

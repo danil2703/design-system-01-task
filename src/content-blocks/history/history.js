@@ -1,4 +1,8 @@
-document.body.onclick = function(event) {
+document.addEventListener('DOMContentLoaded', function() {
+  document.body.onclick = click;
+})
+
+function click(event) {
   if(event.target.closest('.e-accordion__short')){
     showAccordeon(event.target);
   }

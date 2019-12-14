@@ -11,3 +11,15 @@
 .product__title {
     margin-bottom: var(--space-xxxl);
 }
+
+.theme_color_project-inverse > .image, .theme_color_project-brand > .image {
+    background-image: url('/images/image-placeholder-inverse.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.theme_color_project-default > .image {
+    background-image: url('/images/image-placeholder-primary.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}

@@ -3,11 +3,11 @@
 }
 
 .layout__container_size_s {
-    width: 920px;
+    max-width: 920px;
 }
 
 .layout__container_size_m {
-    width: 1280px;
+    max-width: 1280px;
 }
 
 .layout__container_space-v_xxxxl {

@@ -394,8 +394,8 @@
   background-color: var(--default);
 }
 
-.theme_color_project-inverse .image,
-.theme_color_project-brand .image {
+.theme_color_project-inverse > .image,
+.theme_color_project-brand > .image {
   background-image: url("images/image-placeholder-inverse.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -845,6 +845,12 @@ body {
 .cover__footer {
   width: 100%;
   left: 0;
+}
+
+.cover .image {
+  background-image: url("images/image-placeholder-inverse.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .event {
   min-height: 400px;

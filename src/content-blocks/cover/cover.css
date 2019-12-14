@@ -16,3 +16,9 @@
     width: 100%;
     left: 0;
 }
+
+.cover .image {
+    background-image: url('/images/image-placeholder-inverse.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}

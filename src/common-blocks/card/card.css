@@ -6,14 +6,18 @@
     background: var(--default);
 }
 
-.card__content_distribute_center {
+.card__content {
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+.card__content_distribute_center {
     align-items: center;
 }
 
 .card__content_vertical-align {
-    align-items: center;
+    justify-content: center;
 }
 
 .card__content_space-a_m {

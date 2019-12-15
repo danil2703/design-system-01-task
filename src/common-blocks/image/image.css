@@ -2,16 +2,15 @@
     width: 100%;
     border: 3px solid var(--border);
     background-color: var(--default);
-}
-
-.theme_color_project-default .image {
-    background-image: url('/images/image-placeholder-primary.svg');
+    background-image: var(--image);
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.theme_color_project-inverse .image, .theme_color_project-brand .image {
-    background-image: url('/images/image-placeholder-inverse.svg');
-    background-repeat: no-repeat;
-    background-position: center;
+.theme_color_project-default {
+    --image: url("/images/image-placeholder-primary.svg");
+}
+
+.theme_color_project-inverse, .theme_color_project-brand {
+    --image: url("/images/image-placeholder-inverse.svg");
 }

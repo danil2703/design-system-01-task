@@ -392,19 +392,18 @@
   width: 100%;
   border: 3px solid var(--border);
   background-color: var(--default);
-}
-
-.theme_color_project-default .image {
-  background-image: url("images/image-placeholder-primary.svg");
+  background-image: var(--image);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.theme_color_project-inverse .image,
-.theme_color_project-brand .image {
-  background-image: url("images/image-placeholder-inverse.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.theme_color_project-default {
+  --image: url("images/image-placeholder-primary.svg");
+}
+
+.theme_color_project-inverse,
+.theme_color_project-brand {
+  --image: url("images/image-placeholder-inverse.svg");
 }
 .informer_border_all {
   border: 3px solid var(--border);
@@ -846,36 +845,6 @@ body {
   width: 100%;
   left: 0;
 }
-.event {
-  min-height: 400px;
-}
-
-.event__preview {
-  display: flex;
-  margin-bottom: var(--space-xxl);
-}
-
-.event__speaker {
-  margin-right: var(--space-xs);
-}
-
-.event__title {
-  margin-bottom: var(--space-s);
-}
-
-.event__footer {
-  width: 100%;
-}
-.footer {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: var(--space-xxxl) 0;
-}
-
-.footer__content {
-  display: flex;
-  justify-content: space-between;
-}
 .header {
   padding-top: var(--space-xxxl);
   padding-bottom: var(--space-xxxl);
@@ -895,6 +864,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.footer {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: var(--space-xxxl) 0;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
 }
 .history.list {
   border-bottom: 0;
@@ -957,6 +936,26 @@ body {
 .payment__content {
   padding-bottom: 18px;
 }
+.event {
+  min-height: 400px;
+}
+
+.event__preview {
+  display: flex;
+  margin-bottom: var(--space-xxl);
+}
+
+.event__speaker {
+  margin-right: var(--space-xs);
+}
+
+.event__title {
+  margin-bottom: var(--space-s);
+}
+
+.event__footer {
+  width: 100%;
+}
 .product {
   min-height: 300px;
   border: 3px solid var(--border);
@@ -969,19 +968,6 @@ body {
 
 .product__title {
   margin-bottom: var(--space-xxxl);
-}
-
-.theme_color_project-inverse > .image,
-.theme_color_project-brand > .image {
-  background-image: url("images/image-placeholder-inverse.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.theme_color_project-default > .image {
-  background-image: url("images/image-placeholder-primary.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .warning {
   min-height: 335px;

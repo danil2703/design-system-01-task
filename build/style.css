@@ -518,6 +518,14 @@
 .layout {
   background-color: var(--default);
 }
+.placeholder_size_m {
+  width: 72px;
+  height: 72px;
+}
+
+.placeholder_view_primary {
+  background-color: var(--primary);
+}
 .list_border_all {
   border: 3px solid var(--border);
 }
@@ -570,14 +578,6 @@
 
 .list__item_space-a_m {
   padding: var(--space-m);
-}
-.placeholder_size_m {
-  width: 72px;
-  height: 72px;
-}
-
-.placeholder_view_primary {
-  background-color: var(--primary);
 }
 .section_indent-b_xxl {
   margin-bottom: var(--space-xxl);
@@ -833,17 +833,44 @@ body {
   position: relative;
 }
 
-.cover__preview .image {
-  height: 180px;
-}
-
 .cover__preview {
   margin-bottom: var(--space-l);
+  height: 180px;
 }
 
 .cover__footer {
   width: 100%;
   left: 0;
+}
+.event {
+  min-height: 400px;
+}
+
+.event__preview {
+  display: flex;
+  margin-bottom: var(--space-xxl);
+}
+
+.event__speaker {
+  margin-right: var(--space-xs);
+}
+
+.event__title {
+  margin-bottom: var(--space-s);
+}
+
+.event__footer {
+  width: 100%;
+}
+.footer {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: var(--space-xxxl) 0;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
 }
 .header {
   padding-top: var(--space-xxxl);
@@ -864,16 +891,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.footer {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: var(--space-xxxl) 0;
-}
-
-.footer__content {
-  display: flex;
-  justify-content: space-between;
 }
 .history.list {
   border-bottom: 0;
@@ -936,34 +953,17 @@ body {
 .payment__content {
   padding-bottom: 18px;
 }
-.event {
-  min-height: 400px;
-}
-
-.event__preview {
-  display: flex;
-  margin-bottom: var(--space-xxl);
-}
-
-.event__speaker {
-  margin-right: var(--space-xs);
-}
-
-.event__title {
-  margin-bottom: var(--space-s);
-}
-
-.event__footer {
-  width: 100%;
-}
 .product {
   min-height: 300px;
   border: 3px solid var(--border);
 }
 
+.product__image {
+  border: 3px solid var(--default);
+}
+
 .product__image .image {
   height: 160px;
-  border: 3px solid var(--default);
 }
 
 .product__title {

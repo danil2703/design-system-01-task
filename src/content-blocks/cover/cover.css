@@ -4,12 +4,9 @@
     position:relative;
 }
 
-.cover__preview .image {
-    height: 180px;
-}
-
 .cover__preview {
     margin-bottom: var(--space-l);
+    height: 180px;
 }
 
 .cover__footer {

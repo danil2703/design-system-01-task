@@ -79,7 +79,6 @@ body {
     --gap: var(--space-xl);
 }
 
-
 .theme {
     background-color: var(--default);
 }
@@ -89,7 +88,12 @@ body {
     .layout .grid {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .grid .grid__fraction {
         grid-column: span 1;
+    }
+
+    .theme_gap_small {
+        --gap: var(--space-s);
     }
 }

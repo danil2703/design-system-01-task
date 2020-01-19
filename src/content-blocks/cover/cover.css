@@ -1,0 +1,15 @@
+.cover {
+    min-height: 472px;
+    padding: var(--space-xxl);
+    position:relative;
+}
+
+.cover__preview {
+    margin-bottom: var(--space-l);
+    height: 180px;
+}
+
+.cover__footer {
+    width: 100%;
+    left: 0;
+}

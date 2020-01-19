@@ -1,0 +1,32 @@
+.history.list {
+    border-bottom: 0;
+}
+
+.history .history__show {
+    justify-content: space-between;
+    margin-bottom: var(--space-m);
+}
+
+.history__details {
+    display: flex;
+}
+
+.history__hide {
+    display: none;
+}
+
+.history .history__transaction {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.history__time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.history__quantity {
+    display: flex;
+    align-items: center;
+}
